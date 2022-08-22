@@ -1,0 +1,15 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway
+
+spring:
+  application:
+    name: dh-fintech-gateway
+  cloud:
+    config:
+      server:
+        git:
+          searchPaths: dh-fintech-config
+          uri: https://github.com/dionseid/dh-fintech-msa

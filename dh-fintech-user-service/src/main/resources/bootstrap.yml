@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: dh-fintech-user-service
+  cloud:
+    config:
+      server:
+        git:
+          searchPaths: dh-fintech-config
+          uri: https://github.com/dionseid/dh-fintech-msa
